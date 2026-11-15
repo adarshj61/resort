@@ -1,0 +1,122 @@
+export const SERVICES_DATA = [
+  {
+    id: "freeform-pool",
+    title: "Freeform Swimming Pool",
+    name: "Freeform Swimming Pool",
+    shortName: "Freeform Pool",
+    category: "Recreation & Leisure",
+    icon: "Waves",
+    image: "/images/resort/photo_22.jpg",
+    description: "Sparkling freeform outdoor pool bordered by tropical palm trees, sun deck loungers, and attached kids splash pool.",
+    tag: "Open 7 AM – 7 PM",
+    highlights: ["Shaded pool cabanas & sun deck", "Dedicated children's wading area"]
+  },
+  {
+    id: "restaurant",
+    title: "Restaurant (Halal & Multi-Cuisine)",
+    name: "Restaurant (Halal & Multi-Cuisine)",
+    shortName: "Restaurant & Lawn Dining",
+    category: "Culinary Experiences",
+    icon: "Utensils",
+    image: "/images/resort/photo_00.jpg",
+    description: "The Four Seasons & Marmalade serving authentic Maharashtrian specialties, Mughlai gravies, and global favorites.",
+    tag: "Indoor & Al Fresco",
+    highlights: ["Al fresco garden starlit dining", "Authentic regional Maharashtrian flavors"]
+  },
+  {
+    id: "steam-sauna",
+    title: "Steam & Sauna Pavilion",
+    name: "Steam & Sauna Pavilion",
+    shortName: "Steam & Sauna",
+    category: "Health & Wellness",
+    icon: "Flame",
+    image: "/images/resort/photo_31.jpg",
+    description: "Herbal steam sessions and dry sauna facilities to detoxify and unwind after exploring Ellora Caves.",
+    tag: "Ayurvedic Inspired",
+    highlights: ["Eucalyptus-infused herbal steam", "Detoxifying dry heat sauna"]
+  },
+  {
+    id: "indoor-games",
+    title: "Indoor Games Lounge",
+    name: "Indoor Games Lounge",
+    shortName: "Board Games, Carrom & Darts",
+    category: "Recreation",
+    icon: "Gamepad2",
+    image: "/images/resort/photo_32.jpg",
+    description: "Recreation pavilion featuring carrom boards, chess, dartboards, and board games for family engagement.",
+    tag: "All Ages",
+    highlights: ["Championship carrom boards", "Family board game library & darts"]
+  },
+  {
+    id: "gym-fitness",
+    title: "Fitness Center & Gym",
+    name: "Fitness Center & Gym",
+    shortName: "Fitness Center",
+    category: "Health & Wellness",
+    icon: "Dumbbell",
+    image: "/images/resort/photo_25.jpg",
+    description: "Well-equipped health club and cardio area to maintain your workout routine during your resort escape.",
+    tag: "Resident Guests",
+    highlights: ["Cardio & strength equipment", "Open daily for resort residents"]
+  },
+  {
+    id: "botanical-gardens",
+    title: "13-Acre Botanical Grounds",
+    name: "13-Acre Botanical Grounds",
+    shortName: "13-Acre Gardens & Ponds",
+    category: "Nature Sanctuary",
+    icon: "Trees",
+    image: "/images/resort/photo_19.jpg",
+    description: "Award-winning landscape design with brick walking pathways, flowering bougainvillea, and lotus ponds.",
+    tag: "Over 50 Bird Species",
+    highlights: ["Brick trails & centenary trees", "Natural lotus and water lily ponds"]
+  },
+  {
+    id: "air-conditioning",
+    title: "Climate Controlled Rooms",
+    name: "Climate Controlled Rooms",
+    shortName: "Air Conditioning",
+    category: "Comfort",
+    icon: "Snowflake",
+    image: "/images/resort/photo_29.jpg",
+    description: "Individual whisper-quiet split air conditioning across all cottage accommodations and suites.",
+    tag: "Full Climate Control",
+    highlights: ["Individual room temperature control", "Whisper-quiet cooling units"]
+  },
+  {
+    id: "free-wifi",
+    title: "High-Speed Wi-Fi",
+    name: "High-Speed Wi-Fi",
+    shortName: "Complimentary Wi-Fi",
+    category: "Connectivity",
+    icon: "Wifi",
+    image: "/images/resort/photo_30.jpg",
+    description: "Seamless wireless internet connectivity throughout cottages, restaurants, and reception areas.",
+    tag: "High-Speed",
+    highlights: ["Complimentary high-speed coverage", "Accessible across rooms and lawns"]
+  },
+  {
+    id: "free-parking",
+    title: "Free Secure Parking",
+    name: "Free Secure Parking",
+    shortName: "Valet & Free Parking",
+    category: "Convenience",
+    icon: "Car",
+    image: "/images/resort/photo_17.jpg",
+    description: "Spacious on-site parking lot with security personnel accommodating personal cars and tour coaches.",
+    tag: "Complimentary",
+    highlights: ["24/7 guarded on-site parking", "Coach and private vehicle capacity"]
+  },
+  {
+    id: "spa-massages",
+    title: "Holistic Spa Therapies",
+    name: "Holistic Spa Therapies",
+    shortName: "Ayurvedic Spa & Massages",
+    category: "Health & Wellness",
+    icon: "Sparkles",
+    image: "/images/resort/photo_31.jpg",
+    description: "Traditional Abhyanga body therapies, aromatherapy, and foot reflexology conducted by skilled practitioners.",
+    tag: "Wellness Retreat",
+    highlights: ["Ayurvedic herbal oil therapies", "Deep relaxation massage suites"]
+  }
+];

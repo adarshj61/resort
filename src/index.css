@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FAF8F5;
+    color: #23392E;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5baa1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #517B65;
+}
+
+/* Continuous Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Vertical Moving Columns Animations for Rooms & Suites */
+@keyframes verticalScrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes verticalScrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-vertical-up {
+  animation: verticalScrollUp 25s linear infinite;
+}
+
+.animate-vertical-down {
+  animation: verticalScrollDown 25s linear infinite;
+}
+
+/* Utility Animations */
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+/* Chatbot Floating Orb Cyclic Animations */
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes askMeTextCycle {
+  0%, 40% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  46%, 92% {
+    opacity: 0;
+    transform: scale(0.2) rotate(15deg);
+  }
+  98%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes askMeSparkleCycle {
+  0%, 40% {
+    opacity: 0;
+    transform: scale(0.2) rotate(-15deg);
+  }
+  46%, 92% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  98%, 100% {
+    opacity: 0;
+    transform: scale(0.2) rotate(-15deg);
+  }
+}
+
+.animate-orb-float {
+  animation: orbFloat 3.5s ease-in-out infinite;
+}
+
+.animate-askme-text {
+  animation: askMeTextCycle 5.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-askme-sparkle {
+  animation: askMeSparkleCycle 5.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Chatbot Smooth Message Entrances & Realistic Typing */
+@keyframes chatWindowClose {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.95);
+  }
+}
+
+.animate-chat-close {
+  animation: chatWindowClose 0.22s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes chatBubbleIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes typingWave {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes tickPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bubble-in {
+  animation: chatBubbleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-tick-pop {
+  animation: tickPop 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-typing-dot-1 {
+  animation: typingWave 1.3s infinite ease-in-out;
+  animation-delay: 0s;
+}
+
+.animate-typing-dot-2 {
+  animation: typingWave 1.3s infinite ease-in-out;
+  animation-delay: 0.18s;
+}
+
+.animate-typing-dot-3 {
+  animation: typingWave 1.3s infinite ease-in-out;
+  animation-delay: 0.36s;
+}
+
+/* Button & Link transitions */
+button, a {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
